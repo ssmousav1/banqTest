@@ -1,0 +1,60 @@
+.app {
+  display: flex;
+  /* justify-content: space-evenly; */
+  height: calc(100vh - 40px);
+  padding: 20px;
+  background: #e7e7e7e7;
+}
+
+.users-container {
+  width: 15%;
+}
+
+.user-item {
+  cursor: pointer;
+  margin: 4px;
+}
+
+.conversations-container {
+  width: 20%;
+}
+
+.conversation-item {
+  cursor: pointer;
+}
+
+.messages-container {
+  width: 65%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.messages-container div {
+  text-align: center;
+}
+
+.modal-container {
+  /* width: 100vw;
+  height: 100vh; */
+  position: absolute;
+  /* background: red; */
+  top: 0;
+  left: 0;
+}
+
+.modal-wrapper {
+  width: 100vw;
+  height: 100vh;
+  background: #d6dbd6c2;
+  position: absolute;
+}
+
+.modal-container span {
+  width: 100px;
+  height: 100px;
+  top: 50%;
+  left: 50%;
+  background: white;
+  position: absolute;
+}
