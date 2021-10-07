@@ -8,19 +8,58 @@
 
 .users-container {
   width: 15%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: pink;
+  border-radius: 6px;
+  margin-right: 10px;
 }
 
 .user-item {
   cursor: pointer;
   margin: 4px;
+  background: rgb(248, 152, 168);
+  border-radius: 10px;
+  width: 90%;
+  text-align: center;
+  padding: 10px;
 }
 
 .conversations-container {
   width: 20%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: rgb(136, 138, 250);
+  border-radius: 6px;
+  margin-right: 10px;
+}
+
+.btn-container {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.button {
+  font-size: 10px;
+  background: rgb(72, 74, 177);
+  border: none;
+  border-radius: 12px;
+  padding-left: 10px;
+  padding-right: 10px;
+  cursor: pointer;
 }
 
 .conversation-item {
   cursor: pointer;
+  margin: 4px;
+  background: rgb(111, 113, 253);
+  border-radius: 10px;
+  width: 90%;
+  text-align: center;
+  padding: 10px;
 }
 
 .messages-container {
@@ -28,6 +67,10 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  align-items: center;
+  background: rgb(144, 252, 168);
+  border-radius: 6px;
+  margin-right: 10px;
 }
 
 .messages-container div {

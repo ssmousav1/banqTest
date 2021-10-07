@@ -4,12 +4,20 @@ import { fakeUsers } from '../utils/mockData';
 
 const Users = (props) => {
 
-  const [users, setUsers] = useState([])
+  const [users, setUsers] = useState([
+    { id: 1, name: 'ssn' },
+    { id: 2, name: 'ssn' },
+    { id: 3, name: 'ssn' },
+    { id: 4, name: 'ssn' },
+    { id: 5, name: 'ssn' },
+  ])
 
   const getUsers = async () => {
     const res = await API('/user', 'get')
-    console.log(res.data.data);
-    setUsers(res.data.data)
+    if (res.data) {
+      console.log(res.data.data);
+      setUsers(res.data.data)
+    }
 
     // const res = await API('/users', 'get')
     // console.log(res.data);
@@ -21,7 +29,7 @@ const Users = (props) => {
   }, [])
 
   const selectUser = (userID) => {
-    props.setUser(userID)
+    // props.setUser(userID)
   }
 
   return (
@@ -30,7 +38,7 @@ const Users = (props) => {
         users
       </h2>
       {
-        users.map(user => (
+        users && users.map(user => (
           <div className='user-item' onClick={() => selectUser(user.id)}>{user.name}</div>
         ))
       }

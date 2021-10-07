@@ -4,7 +4,13 @@ import { API } from '../utils/APICalls';
 
 const Conversations = (props) => {
 
-  const [conversations, setConversations] = useState([])
+  const [conversations, setConversations] = useState([
+    { id: 1, name: 'ssn' },
+    { id: 2, name: 'ssn' },
+    { id: 3, name: 'ssn' },
+    { id: 4, name: 'ssn' },
+    { id: 5, name: 'ssn' },
+  ])
 
   const getUsers = async (user) => {
     const res = await API(`/user/${user}/conversation`, 'get')
@@ -38,16 +44,16 @@ const Conversations = (props) => {
         conversations
       </h2>
       {
-        props.user &&
-        <>
-          <button onClick={() => openNewConversationModal('single')}>
+        // props.user &&
+        <div className="btn-container">
+          <button className="button" style={{marginRight:'20px'}} onClick={() => openNewConversationModal('single')}>
             <h3>new conversation</h3>
           </button>
 
-          <button onClick={() => openNewConversationModal('group')}>
+          <button className="button" onClick={() => openNewConversationModal('group')}>
             <h3>new group chat</h3>
           </button>
-        </>
+        </div>
       }
 
       {
