@@ -78,12 +78,15 @@
 }
 
 .modal-container {
-  /* width: 100vw;
-  height: 100vh; */
+  width: 100vw;
+  height: 100vh;
   position: absolute;
   /* background: red; */
   top: 0;
   left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .modal-wrapper {
@@ -93,11 +96,32 @@
   position: absolute;
 }
 
-.modal-container span {
-  width: 100px;
-  height: 100px;
-  top: 50%;
-  left: 50%;
+.model-content {
+  width: 200px;
+  padding: 8px;
   background: white;
   position: absolute;
+  border-radius: 6px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.model-content button{
+  width: 90%;
+  background: rgb(0, 153, 255);
+  padding: 8px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.model-content input{
+  width: 90%;
+  border: none;
+  background: rgb(172, 172, 172);
+  border-radius: 6px;
+  padding: 8px;
+  text-align: center;
 }
