@@ -42,7 +42,7 @@ const Messages = (props) => {
           <div className='messages-item'>{message.text}</div>
         ))
       }
-      <span>
+      <span className="new-msg-wrapper">
         <input value={newMessage} onChange={e => setNewMessage(e.target.value)} />
         <button onClick={() => sendNewMessage(props.user, props.conversation, newMessage)}>send</button>
       </span>

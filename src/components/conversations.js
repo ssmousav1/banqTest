@@ -46,7 +46,9 @@ const Conversations = (props) => {
       {
         // props.user &&
         <div className="btn-container">
-          <button className="button" style={{marginRight:'20px'}} onClick={() => openNewConversationModal('single')}>
+          <button className="button"
+            style={{ marginRight: '20px' }}
+            onClick={() => openNewConversationModal('single')}>
             <h3>new conversation</h3>
           </button>
 
