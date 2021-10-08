@@ -81,23 +81,23 @@
   display: flex;
   width: 90%;
   justify-content: space-between;
-  gap:20px;
+  gap: 20px;
   padding-bottom: 10px;
 }
 
 .new-msg-wrapper input {
   flex-grow: 5;
   padding: 8px;
-  border-radius : 6px;
-  border:none;
+  border-radius: 6px;
+  border: none;
   background: rgb(172, 172, 172);
 }
 
 .new-msg-wrapper button {
   flex-grow: 2;
   padding: 8px;
-  border-radius : 6px;
-  border:none;
+  border-radius: 6px;
+  border: none;
   background: rgb(0, 153, 255);
   color: white;
   font-size: 20px;
@@ -140,7 +140,15 @@
   border: none;
   border-radius: 10px;
   cursor: pointer;
+  color: white;
   margin-top: 10px;
+}
+
+.model-content select {
+  width: 90%;
+  align-self: center;
+  margin-top: 15px;
+  max-height: 100px;
 }
 
 .model-content input {
