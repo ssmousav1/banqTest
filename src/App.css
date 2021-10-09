@@ -68,13 +68,26 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  background: rgb(144, 252, 168);
+  /* background: rgb(144, 252, 168); */
   border-radius: 6px;
   margin-right: 10px;
+  position: relative;
+  overflow: auto;
 }
 
-.messages-container div {
-  text-align: center;
+.messages-container div {}
+
+.messages-item {
+  text-align: left;
+  padding: 10px;
+  background: rgb(0, 255, 57);
+  margin: 10px;
+  border-radius: 10px;
+}
+
+.sender {
+  text-align: right !important;
+  background: rgb(104, 104, 104);
 }
 
 .new-msg-wrapper {
@@ -83,6 +96,8 @@
   justify-content: space-between;
   gap: 20px;
   padding-bottom: 10px;
+  position: sticky;
+  bottom: 0;
 }
 
 .new-msg-wrapper input {
